@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Maggie App</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class='h1one'>Maggie's DNS Website</h1>
+        <img src="./assets/maggie.jpg" alt="maggiepic" class="maggiepic"/>
+        <a class='adoptionLink' href="adopt.html">Your Adoptions</a>
+    </div>
+    <div class="infoRow">
+        <div class="breedCard">
+        <label htmlFor="breed">Breed:</label>
+        <input list="breedlist" placeholder="select_a_breed" id="breed" name="breed">
+            <datalist id="breedlist"></datalist>
+        </div>
+        <h3 class='licksh3'>Licks:<span class='lickSpan'></span></h3>
+        <h4 class='poopsh4'>Poop:<span class='poopSpan'></span></h4>
+        <h4 class='adoptionh4'>Adoptions:<span class='adoptionSpan'></span></h4>
+    </div>
+
+    <div class="mainContent">
+        <div class="column">
+            <h1 class='h1btn'>PREVIOUS</h1>
+        </div>
+        <div class="column">
+            <div class="middleColumnContainer">
+            <div class="imageDiv"></div>
+            <div class="imageOptions">
+                <i class='fas fa-heart heart'></i>
+                <i class='fas fa-thumbs-up thumbup'></i>
+                <i class='fas fa-thumbs-down thumbdown'></i>
+                <i class='fas fa-poop poop'></i>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <h1 class='h1btn'>NEXT</h1>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <p>Footer&copy; 🐾</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

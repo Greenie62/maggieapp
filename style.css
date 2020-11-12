@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Lora', serif;
+    position:relative;
+}
+
+body{
+    background:linear-gradient(to right,gray,lightgray)
+}
+
+.header, .footer{
+    height:15vh;
+    width:100%;
+    background:linear-gradient(to right,tan,brown,white);
+    color:white;
+}
+
+.footer{
+    text-align:center;
+    height:5vh;
+}
+
+.h1one{
+    left:15%;
+    top:10%;
+}
+
+.maggiepic{
+    height:75px;
+    width:75px;
+    border-radius:50%;
+    left:60%;
+    top:-35px;
+}
+
+.adoptionLink{
+    text-decoration:none;
+    color:black;
+    left:65%;
+    top:-75px;
+}
+
+
+.infoRow{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    background:linear-gradient(to right,tan,brown,white);
+}
+
+
+.heart{
+    color:red;
+    border:1px solid black;
+    border-radius:50%;
+    padding:.25em;
+    background:linear-gradient(lightgray,gray);
+    cursor:pointer;
+}
+
+.poop{
+    color:rgb(138, 108, 12);
+    border:1px solid black;
+    border-radius:50%;
+    padding:.25em;
+    background:linear-gradient(lightgray,gray);
+    cursor:pointer;
+
+
+}
+
+.thumbdown, .thumbup{
+    color:tan;
+    border:1px solid black;
+    border-radius:50%;
+    padding:.25em;
+    background:linear-gradient(lightgray,gray);
+    cursor:pointer;
+
+
+}
+
+
+.mainContent{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    height:50vh;
+}
+
+
+.middleColumnContainer{
+    height:80%;
+    width:80%;
+    left:5%;
+    top:0%;
+    /* border:1px solid black; */
+}
+
+.imageDiv{
+    height:80%;
+    width:100%;
+    /* border:1px solid red; */
+}
+
+.centerImage{
+    height:100%;
+    width:100%;
+}
+
+.imageOptions{
+    height:20%;
+    width:100%;
+    /* border:1px solid blue; */
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    background:linear-gradient(to right,#ebebeb,white);
+    border-bottom-left-radius:15%;
+    border-bottom-right-radius:15%;
+}
+
+
+
+.column{
+    flex:1;
+    /* border:1px solid black; */
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.h1link{
+    border-radius:50%;
+    width:200px;
+    height:50px;
+    background:linear-gradient(to right,tan,brown,white);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+
+@media screen and (max-width:350px){
+    .header{
+        display:flex;
+        align-items:center;
+        justify-content: space-evenly;
+    }
+
+    .h1one, .adoptionLink{
+        font-size:12px;
+    }
+
+    .adoptionLink, .maggiepic, .h1one{
+        left:0;
+        top:0;
+    }
+
+    .adoptionLink{
+        left:-200px;
+        top:15px;
+    }
+
+
+    .mainContent{
+        display:flex;
+        flex-direction:column;
+        height:80vh;
+    }
+
+    .middleColumnContainer{
+        left:-5%;
+    }
+
+.infoRow{
+    flex-direction:column;
+}
+
+
+}
+
